@@ -49,7 +49,7 @@ app.get("/signupsubmit", (req,res)=>{
     const password=req.query.password;
 
     //adding new data to collection
-    db.collection("consumers").add({
+    db.collection("weather").add({
         name: full_name + last_name,
         email: email,
         password: password,
